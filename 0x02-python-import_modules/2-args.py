@@ -4,9 +4,9 @@ list = sys.argv
 len_list = len(list) - 1
 if __name__ == '__main__':
     if len_list == 0:
-        print("{} argument.".format(len_list))
+        print("{} arguments.".format(len_list))
     if len_list == 1:
-        print("{} arguments:".format(len_list))
+        print("{} argument:".format(len_list))
         print("1: {}".format(list[len_list]))
     if len_list > 1:
         print("{} arguments:".format(len_list))
