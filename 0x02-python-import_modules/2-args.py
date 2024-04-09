@@ -8,4 +8,4 @@ if __name__ == '__main__':
     if len_list >= 1:
         print("{} arguments :".format(len_list))
         for x in range(1, len_list + 1):
-            print("{} {}".format(x, list[x]))
+            print("{}: {}".format(x, list[x]))
