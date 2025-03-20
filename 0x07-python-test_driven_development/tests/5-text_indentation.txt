@@ -1,0 +1,47 @@
+text_indentation module
+========================
+
+This is a test file for the text_indentation function.
+
+Examples:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test with a normal sentence:
+
+    >>> text_indentation("Hello. How are you? I'm fine: thanks.")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    I'm fine:
+    <BLANKLINE>
+    thanks.
+
+Test with spaces before and after punctuation:
+
+    >>> text_indentation("  Hello   .  How are you   ?   I'm fine  : thanks.  ")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    I'm fine:
+    <BLANKLINE>
+    thanks.
+
+Test with no punctuation:
+
+    >>> text_indentation("This is a test with no punctuation")
+    This is a test with no punctuation
+
+Test with an empty string:
+
+    >>> text_indentation("")
+    
+
+Test with invalid input:
+
+    >>> text_indentation(42)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
