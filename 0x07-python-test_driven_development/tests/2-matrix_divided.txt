@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+matrix_divided module
+=====================
+
+this is a test file for the matrix_deivided function.
+
+Examples:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+    # Test 1: Normal case with integers
+    >>> matrix = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+    >>> matrix_divided(matrix, 10)
+    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]]
+
+    # Test 2: Normal case with floats
+    >>> matrix = [[1.5, 2.5], [3.5, 4.5]]
+    >>> matrix_divided(matrix, 0.5)
+    [[3.0, 5.0], [7.0, 9.0]]
