@@ -6,14 +6,11 @@ class Square(Rectangle):
     """main class"""
 
     def __init__(self, size):
-        """initialization"""
         self.integer_validator("size", size)
         self.__size = size
 
     def area(self):
-        """claculates the area"""
         return self.__size * self.__size
 
     def __str__(self):
-        """when you use print """
         return f"[Rectangle] {self.__size}/{self.__size}"
